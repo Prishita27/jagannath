@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starlight Run</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="game-card" aria-label="Starlight Run game">
+        <div class="sky" id="sky" aria-hidden="true"></div>
+        <header class="hud">
+          <div class="brand"><span class="brand-mark">✦</span><span>STARLIGHT RUN</span></div>
+          <div class="scoreboard"><span>COINS</span><strong id="score">00</strong></div>
+        </header>
+        <div class="mission" id="mission"><span class="pulse"></span>Navigate through the starlight</div>
+        <div class="game-area" id="gameArea">
+          <div class="planet planet-one"></div><div class="planet planet-two"></div>
+          <div class="rocket" id="rocket" aria-label="Your rocket"><span class="window"></span><span class="wing left-wing"></span><span class="wing right-wing"></span><span class="flame"></span></div>
+        </div>
+        <div class="controls"><span>←</span><span>MOVE</span><span>→</span><i></i><span class="mobile-controls">DRAG TO STEER</span><span class="desktop-controls">COLLECT THE GOLDEN LIGHT</span></div>
+        <button class="restart" id="restart" type="button" hidden>TRY THE STARS AGAIN</button>
+      </section>
+      <p class="caption">A little journey, written in the stars.</p>
+    </main>
+
+    <section class="question-layer" id="questionLayer" aria-hidden="true">
+      <div class="impact-glow"></div>
+      <div class="question-card">
+        <div class="tiny-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+        <p class="eyebrow">THE STARS HAVE SOMETHING TO ASK</p>
+        <h1>Will you be my<br /><em>bf</em> again?</h1>
+        <p class="question-note">I promise, this time I’ll navigate with you.</p>
+        <div class="choice-row"><button class="yes-button" id="yesButton" type="button">Yes, always <span>♥</span></button><button class="no-button" id="noButton" type="button">No</button></div>
+      </div>
+    </section>
+
+    <section class="scroll-layer" id="scrollLayer" aria-hidden="true">
+      <button class="close-scroll" id="closeScroll" type="button" aria-label="Close letter">×</button>
+      <article class="scroll" aria-label="A handwritten letter">
+        <div class="scroll-top"></div>
+        <div class="paper">
+          <p class="letter-kicker">for you, with all my heart</p>
+          <div class="poem">
+            <p>he said his actions speak louder than his words.<br>and that day he got me my favourite flowers,<br>even tho I stepped on his shoes.</p>
+            <p>he said his actions speak louder than his words.<br>and that day he didn't play music,<br>instead he let me yap and be magestic.</p>
+            <p>he said his actions speak louder than his words.<br>and he told me he was sad because I said,<br>i'll change and not overreact.</p>
+            <p>he said his actions speak louder than words.<br>and I'm afraid I won't be able to keep up</p>
+            <p>he said his actions speak louder than his words.<br>and yet here he is agreeing to be in a trsyt,<br>texting me while taking all this risk.</p>
+            <p>he said his actions speak louder than his words.<br>and he is turning into a smaller me,<br>not letting me burn in jealousy.</p>
+            <p>he said his actions speak louder than his words.<br>But, now it's my turn,<br>my turn to prove myself,<br>to indulge in ways i could only have dreamt.<br>to keep up with his actions while building my own.<br>now my actions will speak louder than my words.</p>
+          </div>
+          <p class="signature">— yours, among the stars ✦</p>
+        </div>
+        <div class="scroll-bottom"></div>
+      </article>
+    </section>
+    <script src="game.js"></script>
+  </body>
+</html>
